@@ -1,0 +1,35 @@
+<style>
+</style>
+<script>
+    function functie1(){
+        let denaam = document.getElementById("ffproberen").value;
+        let deletter = document.getElementById("deletteri").value
+        let aanwezig = false;
+
+
+        for(let x = 0; x < denaam.length ; x++){
+            if( denaam[x]  == deletter  ){
+                aanwezig = true;
+            }
+        }
+
+        if(aanwezig){
+            document.getElementById("uitvoerinhtml").innerHTML = "ja zit er in"
+        }else{
+            document.getElementById("uitvoerinhtml").innerHTML = "nee zit er niet in"
+
+        }
+    
+
+    }
+</script>
+
+Het woord:<input id="ffproberen"><br>
+De letter die je zoekt:<input id="deletteri"><br>
+<button onclick="functie1()">klikken</button>
+
+<div id="uitvoerinhtml"  >   check  </div>
+
+
+<br><br><br><hr>
+==================================================
